@@ -1,232 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * {
+    box-sizing: border-box;
+  }
 
-  <title>Anna Bajorek</title>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+  }
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.15;
+  }
 
-    html {
-      scroll-behavior: smooth;
-    }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
 
-    body {
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #000;
-      font-family: "Times New Roman", Times, serif;
-      font-size: 15px;
-      line-height: 1.15;
-    }
+  a:hover {
+    text-decoration: underline;
+  }
 
-    a {
-      color: #000;
-      text-decoration: none;
-    }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 50%;
 
-    a:hover {
-      text-decoration: underline;
-    }
+    width: 320px;
 
-    /* MENU */
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    margin-bottom: 35px;
+  }
+
+  .menu-section {
+    margin-bottom: 30px;
+  }
+
+  .menu-title {
+    margin-bottom: 5px;
+  }
+
+  .menu-item {
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .projects {
+    margin-top: 2px;
+    margin-left: 20px;
+  }
+
+  .projects a {
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  main {
+    min-height: 100vh;
+  }
+
+  @media (max-width: 700px) {
 
     .menu {
-      position: fixed;
-      top: 0;
+      position: relative;
       left: 0;
+      transform: none;
 
       width: 100%;
-      padding: 22px 25px;
 
-      z-index: 1000;
-
-      background: #fff;
-
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      align-items: start;
+      padding: 20px;
     }
 
-    .name {
-      font-size: 15px;
-    }
-
-    .menu-column {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .menu-title {
-      margin-bottom: 8px;
-    }
-
-    .menu-item {
-      display: block;
-      margin-bottom: 2px;
-    }
-
-    /* PHOTOGRAPHY SUBMENU */
-
-    .projects {
-      margin-top: 2px;
-      margin-left: 18px;
-
-      display: flex;
-      flex-direction: column;
-    }
-
-    .projects-title {
-      margin-bottom: 2px;
-    }
-
-    /* MAIN */
-
-    main {
-      padding-top: 120px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 700px) {
-
-      .menu {
-        position: relative;
-
-        display: block;
-
-        padding: 20px;
-      }
-
-      .name {
-        margin-bottom: 30px;
-      }
-
-      .menu-column {
-        margin-bottom: 25px;
-      }
-
-      main {
-        padding-top: 30px;
-      }
-
-    }
-  </style>
-</head>
+  }
+</style>
 
 
-<body>
+<nav class="menu">
 
-  <!-- MENU -->
+  <div class="name">
+    <a href="index.html">ANNA BAJOREK</a>
+  </div>
 
-  <nav class="menu">
 
-    <!-- NAME -->
+  <div class="menu-section">
 
-    <div class="name">
-      <a href="index.html">ANNA BAJOREK</a>
+    <div class="menu-title">
+      FILM
     </div>
 
+    <a class="menu-item" href="film-commercial.html">
+      Commercial
+    </a>
 
-    <!-- FILM -->
+    <a class="menu-item" href="music-videos.html">
+      Music video
+    </a>
 
-    <div class="menu-column">
+    <a class="menu-item" href="social-campaigns.html">
+      Social campaign
+    </a>
 
-      <div class="menu-title">
-        FILM
-      </div>
+  </div>
 
-      <a class="menu-item" href="film-commercial.html">
-        Commercial
+
+  <div class="menu-section">
+
+    <div class="menu-title">
+      PHOTOGRAPHY
+    </div>
+
+    <a class="menu-item" href="commercial-folio.html">
+      Commercial folio
+    </a>
+
+    <div class="menu-item">
+      Projects
+    </div>
+
+    <div class="projects">
+
+      <a href="la-casa-violeta.html">
+        La casa violeta
       </a>
 
-      <a class="menu-item" href="music-videos.html">
-        Music video
+      <a href="where-the-wild-things-are.html">
+        Where the wild things are
       </a>
 
-      <a class="menu-item" href="social-campaigns.html">
-        Social campaign
+      <a href="pocket-pieces.html">
+        Pocket pieces
+      </a>
+
+      <a href="zodiak.html">
+        Zodiak
+      </a>
+
+      <a href="2i1.html">
+        2+1
+      </a>
+
+      <a href="rest-ur-chemistry.html">
+        Rest ur chemistry
       </a>
 
     </div>
 
-
-    <!-- PHOTOGRAPHY -->
-
-    <div class="menu-column">
-
-      <div class="menu-title">
-        PHOTOGRAPHY
-      </div>
-
-      <a class="menu-item" href="commercial-folio.html">
-        Commercial folio
-      </a>
-
-      <div class="projects-title">
-        Projects
-      </div>
-
-      <div class="projects">
-
-        <a class="menu-item" href="la-casa-violeta.html">
-          La casa violeta
-        </a>
-
-        <a class="menu-item" href="where-the-wild-things-are.html">
-          Where the wild things are
-        </a>
-
-        <a class="menu-item" href="pocket-pieces.html">
-          Pocket pieces
-        </a>
-
-        <a class="menu-item" href="zodiak.html">
-          Zodiak
-        </a>
-
-        <a class="menu-item" href="2i1.html">
-          2+1
-        </a>
-
-        <a class="menu-item" href="rest-ur-chemistry.html">
-          Rest ur chemistry
-        </a>
-
-      </div>
-
-    </div>
+  </div>
 
 
-    <!-- PRINTS -->
+  <div class="menu-section">
 
-    <div class="menu-column">
+    <a class="menu-item" href="prints.html">
+      PRINTS
+    </a>
 
-      <a class="menu-item" href="prints.html">
-        PRINTS
-      </a>
+    <a class="menu-item" href="contact.html">
+      CONTACT
+    </a>
 
-      <a class="menu-item" href="contact.html">
-        CONTACT
-      </a>
+  </div>
 
-    </div>
-
-  </nav>
-
-
-  <!-- CONTENT -->
-
-  <main>
-
-    <!-- Tutaj później wstawimy zdjęcia / projekty -->
-
-  </main>
-
-</body>
-</html>
+</nav>
